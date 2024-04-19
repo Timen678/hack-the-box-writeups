@@ -17,6 +17,6 @@ cat flag.txt
 
 # Enumerate the NFS service and submit the contents of the flag.txt in the "nfsshare" share as the answer.  
 sudo nmap –script nfs* 10.129.19.209 -sV -p111,2049    to see where the file is located  
-sudo mount -t nfs 10.129.19.209:/mnt/nfsshare ./target-nfs -o nolock   	 - mounted the share  
+sudo mount -t nfs 10.129.19.209:/mnt/nfsshare ./target-nfs -o nolock   	 - mounted the share on the local dir target-nfs, note that targe-nfs(target folder) must be created beforehand
 ls ~/target-nfs  
 cat flag.txt  
