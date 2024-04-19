@@ -1,5 +1,5 @@
 smbclient -N -L //<IPADDR>		-N null session(anonymous access) -L ls server shares.  
-rpcclient -U “” <IPADDR>		-rpcclient connect to the SMB server ability to send various requests to the SMB server such as srvinfo, enumdomains, querydominfo.  
+rpcclient -U "" <IPADDR>		- double "" for anon rpcclient connect to the SMB server(replace with uname if desired), ability to send various requests to the SMB server such as srvinfo, enumdomains, querydominfo.  
 nmap <IPADDR> -sC -sV -p139,445		-p139 and 445 are used by SMB.  
 smbmap -H <IPADDR>		-enumerate SMB server.  
 
