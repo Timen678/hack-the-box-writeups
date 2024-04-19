@@ -5,7 +5,7 @@ nc -nv 10.129.14.136 21
 telnet 10.129.14.136 21
 openssl s_client -connect 10.129.14.136:21 -starttls ftp
 
-#Which version of the FTP server is running on the target system? Submit the entire banner as the answer.
+# Which version of the FTP server is running on the target system? Submit the entire banner as the answer.
 nmap --script ftp-anon 10.129.43.135	-checks if the ftp server allow anonymous access, i.e login with user anonymous and w/e password.
 The ftp server does allow anon access
 ftp anonymous@10.129.43.135
