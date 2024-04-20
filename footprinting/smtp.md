@@ -11,3 +11,5 @@ telnet $target 25
 smtp-user-enum -U footprinting-wordlist.txt -t $target  
 initially tried with default wait time(5s) however that was too quick of a timeout for the server to respond. Upped it to -w 20, worked.  
 smtp-user-enum -w 20 -U footprinting-wordlist.txt -t $target  
+
+PS footprinting-wordlist is provided in the module  
