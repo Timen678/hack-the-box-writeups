@@ -1,3 +1,6 @@
+## Hbox writeups
+Answers are left out for obvious reasons.
+
 ## Kali Linux time-savings and best practice to make Mati Aharoni proud  
 
 Store your target IP address and information that you'll frequently use into variables.  
