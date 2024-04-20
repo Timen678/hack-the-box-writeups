@@ -1,5 +1,6 @@
 ## Hbox writeups
 Answers are left out for obvious reasons  
+dump is my unformatted notes that no one will ever read, if you do decide to, glhf  
 
 ## Kali Linux time-savings and best practice to make Mati Aharoni proud  
 
