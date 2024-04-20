@@ -413,3 +413,89 @@ XSS
 
 
 Can identify what operating system a target has by pinging with ICMP and looking at the TTL of the response. Different operating systems have different TTL.
+
+wget URL - download file from url
+file filename - check type of file
+
+
+
+
+Obedient Cat
+Open “filename”
+
+Mod 26
+rot13
+
+Python Wrangling
+cat pw.txt
+python3 ende.py -d flag.txt.en
+
+
+Wave a flag
+chmod +x warm
+
+Information
+Exiftool is used for reading, writing and manipulating image, audio, video and PDF metadata.
+Exiftool cat.jpg
+cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9 looks like base64 encryption
+Using base64 decode site to decode
+
+Nice netcat…
+netcat is a tool that can read and write data across the internet
+nc mercury.picoctf.net 22342
+112 105 99 111 67 84 70 123 103 48 48 100 95 107 49 116 116 121 33 95 110 49 99 51 95 107 49 116 116 121 33 95 53 102 98 53 101 53 49 100 125 10 looks like ascii code
+Using ascii code to ascii string converter
+
+Transformation
+word = 灩捯䍔䙻ㄶ形楴獟楮獴㌴摟潦弸彥ㄴㅡて㝽
+for char in enc:
+print(hex(ord(char)).lstrip(“0x”),end=''”)
+first turns the character into unicode and then to hexadecimal, removes all the 0x and newlines
+7069636f4354467b31365f626974735f696e73743334645f6f665f385f65313431613066377d hexadecimal
+Using hexadecimal to ascii string converter
+
+Get aHEAD
+Burpsuite to identify the traffic
+Hint 2: Maybe there’s more than 2 options…
+See that there’s a GET and a POST method in the html code, when you inspect the website.
+Maybe the hint and the title refer to a third HTTP request method, see https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+There’s a HTTP request method called HEAD
+Used burpsuite to alter http request to HEAD
+
+Mind your Ps and Qs
+Got C, E and N for RSA. Put it into a decoder https://www.dcode.fr/rsa-cipher
+
+Static ain’t always noise
+just passed the binary file as an argument with the given bash file ./ltdis.sh static
+
+Tab, Tab, Attack
+very straight forward
+
+Matryoshka doll
+Tip was that there existed files inside the jpg file
+jpg file’s terminating byte is ffd9, meaning that everything after ffd9 will be ignored when opening the jpg file
+xxd filename - view the file code in hex
+See that the file contain multiple ffd9 bytes which indicate multiple files inside
+Binwalk is a multipurpose tool that’s used to analyze and extract data
+Binwalk filename - analyze the data of the file
+Binwalk confirms my suspicion that multiple files exist inside
+Binwalk -e filename - extract all hidden files
+Did this multiple times until I found the flag
+cat flag.txt
+
+crackme-py
+just look at the source code
+
+Magikarp Ground Mission
+ssh to the host
+ssh host -p(port) portnumber
+
+tunn3l v1s10n
+Couldn’t open the file because of the header size
+used exiftool to see that it was a BMP file
+exiftool filename
+read wiki to see the header requirements
+used a hex editor to edit the header
+hexedit filename
+
+
