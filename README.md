@@ -1,6 +1,3 @@
-# Hbox writeups
-Answers are left out for obvious reasons <br>
-
 # Kali Linux time-savings and best practice to make Mati Aharoni and Devon Kearns proud  
 Use tmux to manage multiple terminal instances <br>
 tmux		- start <br>
