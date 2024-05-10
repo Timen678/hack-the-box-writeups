@@ -1,11 +1,26 @@
 ## Hbox writeups
 Answers are left out for obvious reasons  
 
-## Kali Linux time-savings and best practice to make Mati Aharoni proud  
+## Kali Linux time-savings and best practice to make Mati Aharoni and Devon Kearns proud  
+Use tmux to manage multiple terminal instances
+tmux		- start
 
-Store your target IP address and information that you'll frequently use into variables  
+Ctrl+b %	- split window into two horizontal panes
+Ctrl+b “	- split window into two vertical panes
+Ctrl+b ←, →, ↑, ↓	- move to pane
+Ctrl+b x	- delete current pane
+
+Ctrl+b C	- create window
+tmux ls		- ls
+Ctrl+b 0, 1, 2, etc	- switch to the window with that index
+Ctrl+b n 	- move to the next window
+Ctrl+b p	- move to the previous window
+Ctrl+b w 	- list all windows and select one from the list
+Ctrl+b &	- delete current window
+
+Store your target IP address and information that you'll frequently use into variables
 export <var_name>=<store>
-To access the stored data  
+To access the stored data
 $var_name
 echo $var_name
 
