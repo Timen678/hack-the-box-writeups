@@ -4,12 +4,10 @@ Answers are left out for obvious reasons <br>
 # Kali Linux time-savings and best practice to make Mati Aharoni and Devon Kearns proud  
 Use tmux to manage multiple terminal instances <br>
 tmux		- start <br>
-<br>
 Ctrl+b %	- split window into two horizontal panes <br>
 Ctrl+b “	- split window into two vertical panes <br>
 Ctrl+b ←, →, ↑, ↓	- move to pane <br>
 Ctrl+b x	- delete current pane <br>
-<br>
 Ctrl+b C	- create window <br>
 tmux ls		- ls <br>
 Ctrl+b 0, 1, 2, etc	- switch to the window with that index <br>
