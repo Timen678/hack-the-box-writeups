@@ -1,9 +1,9 @@
 ## Hbox writeups
-Answers are left out for obvious reasons  
+Answers are left out for obvious reasons <br>
 
 ## Kali Linux time-savings and best practice to make Mati Aharoni and Devon Kearns proud  
-Use tmux to manage multiple terminal instances
-tmux		- start
+Use tmux to manage multiple terminal instances <br>
+tmux		- start  
 
 Ctrl+b %	- split window into two horizontal panes
 Ctrl+b “	- split window into two vertical panes
