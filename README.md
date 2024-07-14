@@ -1,5 +1,6 @@
 # Kali Linux time-savings and best practices to make Mati Aharoni and Devon Kearns proud  
 Use tmux to manage multiple terminal instances <br>
+sudo apt install tmux <br>
 tmux		- start <br>
 Ctrl+b %	- split window into two horizontal panes <br>
 Ctrl+b “	- split window into two vertical panes <br>
