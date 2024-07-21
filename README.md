@@ -16,6 +16,7 @@ Ctrl+b &	- delete current window <br>
 Ctrl+b :  - tmux command prompt
 Ctrl+b : + resize-pane -L,-R,-U,-D X  - resize current pane by X amount in direction left(L), right(R), up(U), or down(D) <br>
 ctrl+b z  - zoom in/out on current pane, useful for mouse selection to copy text <br>
+ctrl+b [  - enable arrow key scrolling
 <br>
 Store your target IP address and information that you'll frequently use into variables <br>
 export <var_name>=<store>  - store value in var_name <br>
