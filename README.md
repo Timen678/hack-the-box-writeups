@@ -14,7 +14,7 @@ Ctrl+b p	- move to the previous window <br>
 Ctrl+b w 	- list all windows and select one from the list <br>
 Ctrl+b &	- delete current window <br>
 Ctrl+b :  - tmux command prompt <br>
-Ctrl+b : + resize-pane -L,-R,-U,-D X  - resize current pane by X amount in direction left(L), right(R), up(U), or down(D) <br>
+Ctrl+b : resize-pane -L,-R,-U,-D X  - resize current pane by X amount in direction left(L), right(R), up(U), or down(D) <br>
 ctrl+b z  - zoom in/out on current pane, useful for mouse selection to copy text <br>
 ctrl+b [  - enable arrow key scrolling | press q to exit mode <br>
 <br>
